@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="fr.univpau.waam.MainActivity" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/action_settings"/>
+    
+    <item
+        android:id="@+id/action_reload"
+        android:title="@string/action_reload"
+        android:actionLayout="@layout/action_bar_notifitcation_icon"
+        android:showAsAction="always"/>
+    
+    <item
+        android:id="@+id/action_new"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="@string/action_new"
+        android:showAsAction="always"/>
+
+</menu>

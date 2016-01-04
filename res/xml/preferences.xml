@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+ 	<ListPreference  android:title="Sexe"
+                     android:summary="Qui êtes-vous ?"
+                     android:key="gender"
+                     android:defaultValue="1"
+                     android:entries="@array/listArray"
+                     android:entryValues="@array/listValues"/>
+ 	<fr.univpau.util.SeekBarPreference
+					android:defaultValue="50"
+					android:title="Distance de recherche"
+					android:summary="Réglez le rayon de recherche des messages."
+					android:key="distance"
+					android:max="500"
+					android:text="mètres"
+					/>
+	<CheckBoxPreference 
+					android:title="Affichage progressif"
+					android:defaultValue="false"
+					android:summary="Afficher les messages progressivement."
+					android:key="pagination" />
+	<CheckBoxPreference 
+					android:title="Mise à jour automatique"
+					android:defaultValue="false"
+					android:summary="La liste est rechargée automatiquement. Si décochée, un badge dans la barre d'action indiquera le nombre de nouveaux messages et vous devrez recharger vous-même la liste de messages."
+					android:key="update" />
+</PreferenceScreen>
